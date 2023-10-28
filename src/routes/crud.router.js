@@ -10,6 +10,6 @@ crudRouter.route("/")
 crudRouter.route("/:id")
     .get(getOne)
     .delete(remove)
-    .put(update)
+    .patch(update)
 
 module.exports = crudRouter;
