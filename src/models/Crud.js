@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection'); 
    // En Mayúsculas y singular      // en minúsculas y singular
-const NombreModelo = sequelize.define('nombreModelo', {
+const Crud = sequelize.define('crud', {
     // Definimos las columnas aquí
     first_name: {
         type: DataTypes.STRING(50),
@@ -30,4 +30,4 @@ const NombreModelo = sequelize.define('nombreModelo', {
     },
 });
 
-module.exports = NombreModelo;
+module.exports = Crud;
